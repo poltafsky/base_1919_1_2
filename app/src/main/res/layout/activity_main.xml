@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    android:background="@drawable/drops">
 
 
     <Button
@@ -25,6 +26,7 @@
         android:layout_height="wrap_content"
         android:text="@string/_2"
         android:textSize="@dimen/button_text_size"
+
         app:layout_constraintBottom_toTopOf="@+id/button37"
         app:layout_constraintEnd_toStartOf="@+id/button35"
         app:layout_constraintHorizontal_bias="0.5"
@@ -52,6 +54,7 @@
         app:layout_constraintBottom_toTopOf="@+id/button30"
         app:layout_constraintEnd_toStartOf="@+id/button27"
         app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_chainStyle="spread"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/button31" />
 
@@ -88,6 +91,7 @@
         app:layout_constraintBottom_toTopOf="@+id/button28"
         app:layout_constraintEnd_toStartOf="@+id/button32"
         app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_chainStyle="spread"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/button43" />
 
@@ -157,9 +161,10 @@
         android:layout_height="wrap_content"
         android:text="@string/division"
         android:textSize="@dimen/button_text_size"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/button46"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintVertical_bias="0.8"
         app:layout_constraintStart_toEndOf="@+id/button42"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_chainStyle="packed" />
@@ -182,9 +187,10 @@
         android:layout_height="wrap_content"
         android:text="@string/сleaner"
         android:textSize="@dimen/button_text_size"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/button36"
         app:layout_constraintEnd_toStartOf="@+id/button40"
         app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintVertical_bias="0.8"
         app:layout_constraintStart_toEndOf="@+id/button44"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_chainStyle="packed" />
@@ -195,9 +201,11 @@
         android:layout_height="wrap_content"
         android:text="@string/reset_to_zero"
         android:textSize="@dimen/button_text_size"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/button31"
         app:layout_constraintEnd_toStartOf="@+id/button44"
         app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintVertical_bias="0.8"
+        app:layout_constraintHorizontal_chainStyle="spread"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_chainStyle="packed" />
@@ -208,11 +216,13 @@
         android:layout_height="wrap_content"
         android:text="@string/percent"
         android:textSize="@dimen/button_text_size"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/button32"
         app:layout_constraintEnd_toStartOf="@+id/button42"
         app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintVertical_bias="0.8"
         app:layout_constraintStart_toEndOf="@+id/button43"
         app:layout_constraintTop_toTopOf="parent"
+
         app:layout_constraintVertical_chainStyle="packed" />
 
     <Button
@@ -224,8 +234,10 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/button37"
         app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_chainStyle="spread"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button30" />
+        app:layout_constraintTop_toBottomOf="@+id/button30"
+        app:layout_constraintVertical_bias="0.8" />
 
     <Button
         android:id="@+id/button46"
