@@ -19,5 +19,8 @@
     <string name="percent">%</string>
     <string name="comma">,</string>
     <string name="multiply">*</string>
+    <string name="replacing_the_sign">+-</string>
+
+
 
 </resources>
