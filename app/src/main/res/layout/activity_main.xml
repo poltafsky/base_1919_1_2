@@ -12,7 +12,7 @@
         android:id="@+id/resultField"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:textSize="18sp"
+        android:textSize="@dimen/text_size_result"
         app:layout_constraintHorizontal_weight="1"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toLeftOf="@+id/operationField"
@@ -22,7 +22,7 @@
         android:id="@+id/operationField"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:textSize="18sp"
+        android:textSize="@dimen/text_size_znak"
         app:layout_constraintHorizontal_weight="1"
         app:layout_constraintLeft_toRightOf="@+id/resultField"
         app:layout_constraintRight_toRightOf="parent"
@@ -32,6 +32,7 @@
         android:id="@+id/numberField"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
+        android:textSize="@dimen/text_size_vvod"
         android:inputType="phone"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
@@ -50,6 +51,7 @@
         <Button
             android:layout_width="0dp"
             android:layout_height="wrap_content"
+            android:textSize="@dimen/button_text_size"
             android:layout_weight="1"
             android:onClick="onNumberClick"
             android:text="@string/_7" />
@@ -57,6 +59,7 @@
         <Button
             android:layout_width="0dp"
             android:layout_height="wrap_content"
+            android:textSize="@dimen/button_text_size"
             android:layout_weight="1"
             android:onClick="onNumberClick"
             android:text="@string/_8" />
@@ -64,6 +67,7 @@
         <Button
             android:layout_width="0dp"
             android:layout_height="wrap_content"
+            android:textSize="@dimen/button_text_size"
             android:layout_weight="1"
             android:onClick="onNumberClick"
             android:text="@string/_9" />
@@ -71,6 +75,7 @@
         <Button
             android:layout_width="0dp"
             android:layout_height="wrap_content"
+            android:textSize="@dimen/button_text_size"
             android:layout_weight="1"
             android:onClick="onOperationClick"
             android:text="@string/division" />
@@ -89,6 +94,7 @@
         <Button
             android:layout_width="0dp"
             android:layout_height="wrap_content"
+            android:textSize="@dimen/button_text_size"
             android:layout_weight="1"
             android:onClick="onNumberClick"
             android:text="@string/_4" />
@@ -96,6 +102,7 @@
         <Button
             android:layout_width="0dp"
             android:layout_height="wrap_content"
+            android:textSize="@dimen/button_text_size"
             android:layout_weight="1"
             android:onClick="onNumberClick"
             android:text="@string/_5" />
@@ -103,6 +110,7 @@
         <Button
             android:layout_width="0dp"
             android:layout_height="wrap_content"
+            android:textSize="@dimen/button_text_size"
             android:layout_weight="1"
             android:onClick="onNumberClick"
             android:text="@string/_6" />
@@ -110,6 +118,7 @@
         <Button
             android:layout_width="0dp"
             android:layout_height="wrap_content"
+            android:textSize="@dimen/button_text_size"
             android:layout_weight="1"
             android:onClick="onOperationClick"
             android:text="@string/multiply" />
@@ -128,6 +137,7 @@
         <Button
             android:layout_width="0dp"
             android:layout_height="wrap_content"
+            android:textSize="@dimen/button_text_size"
             android:layout_weight="1"
             android:onClick="onNumberClick"
             android:text="@string/_1" />
@@ -135,6 +145,7 @@
         <Button
             android:layout_width="0dp"
             android:layout_height="wrap_content"
+            android:textSize="@dimen/button_text_size"
             android:layout_weight="1"
             android:onClick="onNumberClick"
             android:text="@string/_2" />
@@ -142,6 +153,7 @@
         <Button
             android:layout_width="0dp"
             android:layout_height="wrap_content"
+            android:textSize="@dimen/button_text_size"
             android:layout_weight="1"
             android:onClick="onNumberClick"
             android:text="@string/_3" />
@@ -149,6 +161,7 @@
         <Button
             android:layout_width="0dp"
             android:layout_height="wrap_content"
+            android:textSize="@dimen/button_text_size"
             android:layout_weight="1"
             android:onClick="onOperationClick"
             android:text="@string/minus" />
@@ -167,6 +180,7 @@
         <Button
             android:layout_width="0dp"
             android:layout_height="wrap_content"
+            android:textSize="@dimen/button_text_size"
             android:layout_weight="1"
             android:onClick="onNumberClick"
             android:text="@string/_0" />
@@ -174,6 +188,7 @@
         <Button
             android:layout_width="0dp"
             android:layout_height="wrap_content"
+            android:textSize="@dimen/button_text_size"
             android:layout_weight="1"
             android:onClick="onNumberClick"
             android:text="@string/comma" />
@@ -181,6 +196,7 @@
         <Button
             android:layout_width="0dp"
             android:layout_height="wrap_content"
+            android:textSize="@dimen/button_text_size"
             android:layout_weight="1"
             android:onClick="onOperationClick"
             android:text="@string/plus" />
@@ -188,6 +204,7 @@
         <Button
             android:layout_width="0dp"
             android:layout_height="wrap_content"
+            android:textSize="@dimen/button_text_size"
             android:layout_weight="1"
             android:onClick="onOperationClick"
             android:text="@string/equally" />
