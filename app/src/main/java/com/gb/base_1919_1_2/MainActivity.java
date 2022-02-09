@@ -9,22 +9,27 @@ import android.widget.EditText;
 import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
-    TextView resultField; // текстовое поле для вывода результата
-    EditText numberField;   // поле для ввода числа
-    TextView operationField;    // текстовое поле для вывода знака операции
-    Double operand = null;
-    String lastOperation = "="; // последняя операция
+
+    private Calculator calculator;
+
+    private TextView resultField; // текстовое поле для вывода результата
+    private EditText numberField;   // поле для ввода числа
+    private TextView operationField;    // текстовое поле для вывода знака операции
+    private Double operand = null;
+    private String lastOperation = "="; // последняя операция
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        // получаем все поля по id из activity_main.xml
-        resultField = findViewById(R.id.resultField);
-        numberField = findViewById(R.id.numberField);
-        operationField = findViewById(R.id.operationField);
+        initView();
     }
-
+void initView(){
+    // получаем все поля по id из activity_main.xml
+    resultField = findViewById(R.id.resultField);
+    numberField = findViewById(R.id.numberField);
+    operationField = findViewById(R.id.operationField);
+}
     // сохранение состояния
     @Override
     protected void onSaveInstanceState(Bundle outState) {
