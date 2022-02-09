@@ -14,12 +14,9 @@
     <string name="plus">+</string>
     <string name="division">/</string>
     <string name="equally">=</string>
-    <string name="сleaner">X</string>
-    <string name="reset_to_zero">C</string>
-    <string name="percent">%</string>
     <string name="comma">,</string>
     <string name="multiply">*</string>
-    <string name="replacing_the_sign">+-</string>
+
 
 
 
