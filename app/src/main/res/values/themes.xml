@@ -12,5 +12,17 @@
         <!-- Status bar color. -->
         <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
         <!-- Customize your theme here. -->
+        <item name="materialButtonStyle">@style/myButtonStyle</item>
+        <item name="android:theme">@style/myStyleTheme</item>
     </style>
+
+<style name="myStyleTheme">
+    <item name="android:fontFamily">@font/alfa_slab_one</item>
+    <item name="android:textSize">@dimen/text_size_display</item>
+</style>
+    <style name="myButtonStyle" parent="Widget.MaterialComponents.Button">
+        <item name="android:fontFamily">@font/alfa_slab_one</item>
+        <item name="android:textSize">@dimen/button_text_size</item>
+    </style>
+
 </resources>
