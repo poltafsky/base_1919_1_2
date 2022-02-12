@@ -1,13 +1,10 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
     <!-- Base application theme. -->
-    <style name="Theme.Base_1919_1_2" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+    <style name="ThemeDef" parent="Theme.MaterialComponents.DayNight.NoActionBar">
         <!-- Status bar color. -->
         <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
 
-
-
         <!-- Customize your theme here. -->
-
         <item name="materialButtonStyle">@style/myButtonStyle</item>
         <item name="android:theme">@style/myStyleTheme</item>
         <item name="radioButtonStyle">@style/myRadioButtonStyle</item>
@@ -18,24 +15,35 @@
         <item name="android:navigationBarColor">@color/red_500</item>
         <item name="colorPrimary">@color/red_600</item>
         <item name="colorOnPrimary">@color/white</item>
-        <item name="colorPrimaryContainer">@color/red_100</item>
-        <item name="colorOnPrimaryContainer">@color/red_900</item>
-        <item name="colorPrimaryInverse">@color/red_200</item>
         <item name="colorSecondary">@color/red_600</item>
         <item name="colorOnSecondary">@color/white</item>
-        <item name="colorSecondaryContainer">@color/red_100</item>
-        <item name="colorOnSecondaryContainer">@color/red_900</item>
-        <item name="colorTertiary">@color/red_600</item>
-        <item name="colorOnTertiary">@color/white</item>
-        <item name="colorTertiaryContainer">@color/red_100</item>
-        <item name="colorOnTertiaryContainer">@color/red_900</item>
         <item name="android:statusBarColor">@color/red_800</item>
 
     </style>
+    <style name="myThemeGreen" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="android:navigationBarColor">@color/green_500</item>
+        <item name="colorPrimary">@color/green_600</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <item name="colorSecondary">@color/green_600</item>
+        <item name="colorOnSecondary">@color/white</item>
+        <item name="android:statusBarColor">@color/green_800</item>
 
-<style name="myStyleTheme" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+    </style>
+    <style name="myThemeBlue" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="android:navigationBarColor">@color/blue_500</item>
+        <item name="colorPrimary">@color/blue_600</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <item name="colorSecondary">@color/blue_600</item>
+        <item name="colorOnSecondary">@color/white</item>
+        <item name="android:statusBarColor">@color/blue_800</item>
+
+    </style>
+
+<style name="myStyleTheme">
     <item name="android:fontFamily">@font/alfa_slab_one</item>
     <item name="android:textSize">@dimen/text_size_display</item>
+    <item name="android:insetTop">0dp</item>
+    <item name="android:insetBottom">0dp</item>
 </style>
     <style name="myButtonStyle" parent="Widget.MaterialComponents.Button">
         <item name="android:fontFamily">@font/alfa_slab_one</item>

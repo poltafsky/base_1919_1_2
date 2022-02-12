@@ -6,9 +6,10 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.RadioButton;
 import android.widget.TextView;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
     private Calculator calculator;
 
@@ -20,9 +21,17 @@ public class MainActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        setTheme(MyApp.currentTheme);
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         initView();
+
+        ((RadioButton)findViewById(R.id.styleDef)).setOnClickListener(this);
+        ((RadioButton)findViewById(R.id.styleOne)).setOnClickListener(this);
+        ((RadioButton)findViewById(R.id.styleTwo)).setOnClickListener(this);
+        ((RadioButton)findViewById(R.id.styleSecond)).setOnClickListener(this);
+
+
     }
 void initView(){
     // получаем все поля по id из activity_main.xml
@@ -54,6 +63,7 @@ void initView(){
 
         Button button = (Button) view;
         numberField.append(button.getText());
+
 
         if (lastOperation.equals("=") && operand != null) {
             operand = null;
@@ -112,5 +122,29 @@ void initView(){
         }
         resultField.setText(operand.toString().replace('.', ','));
         numberField.setText("");
+    }
+
+    @Override
+    public void onClick(View view) {
+
+        switch (view.getId()){
+            case R.id.styleDef:{
+                MyApp.currentTheme=R.style.ThemeDef;
+                break;
+            }
+            case R.id.styleOne:{
+                MyApp.currentTheme=R.style.myThemeRed;
+                break;
+            }
+            case R.id.styleTwo:{
+                MyApp.currentTheme=R.style.myThemeGreen;
+                break;
+            }
+            case R.id.styleSecond:{
+                MyApp.currentTheme=R.style.myThemeBlue;
+                break;
+            }
+        }
+        recreate();
     }
 }

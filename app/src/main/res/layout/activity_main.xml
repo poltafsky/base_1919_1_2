@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/drops"
@@ -224,6 +223,14 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/themeBlue">
+
+        </com.google.android.material.radiobutton.MaterialRadioButton>
+        <com.google.android.material.radiobutton.MaterialRadioButton
+
+            android:id="@+id/styleDef"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/themeDef">
 
         </com.google.android.material.radiobutton.MaterialRadioButton>
 

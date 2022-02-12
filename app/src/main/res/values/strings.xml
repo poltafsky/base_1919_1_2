@@ -19,6 +19,7 @@
     <string name="themeRed">Red</string>
     <string name="themeGreen">Green</string>
     <string name="themeBlue">Blue</string>
+    <string name="themeDef">themeDef</string>
 
 
 </resources>
