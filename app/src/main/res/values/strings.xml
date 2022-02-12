@@ -16,8 +16,9 @@
     <string name="equally">=</string>
     <string name="comma">,</string>
     <string name="multiply">*</string>
-
-
+    <string name="themeRed">Red</string>
+    <string name="themeGreen">Green</string>
+    <string name="themeBlue">Blue</string>
 
 
 </resources>

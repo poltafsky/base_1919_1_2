@@ -1,28 +1,50 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
     <!-- Base application theme. -->
-    <style name="Theme.Base_1919_1_2" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
-        <!-- Primary brand color. -->
-        <item name="colorPrimary">@color/purple_500</item>
-        <item name="colorPrimaryVariant">@color/purple_700</item>
-        <item name="colorOnPrimary">@color/white</item>
-        <!-- Secondary brand color. -->
-        <item name="colorSecondary">@color/teal_200</item>
-        <item name="colorSecondaryVariant">@color/teal_700</item>
-        <item name="colorOnSecondary">@color/black</item>
+    <style name="Theme.Base_1919_1_2" parent="Theme.MaterialComponents.DayNight.NoActionBar">
         <!-- Status bar color. -->
         <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
+
+
+
         <!-- Customize your theme here. -->
+
         <item name="materialButtonStyle">@style/myButtonStyle</item>
         <item name="android:theme">@style/myStyleTheme</item>
+        <item name="radioButtonStyle">@style/myRadioButtonStyle</item>
+
     </style>
 
-<style name="myStyleTheme">
+    <style name="myThemeRed" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="android:navigationBarColor">@color/red_500</item>
+        <item name="colorPrimary">@color/red_600</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <item name="colorPrimaryContainer">@color/red_100</item>
+        <item name="colorOnPrimaryContainer">@color/red_900</item>
+        <item name="colorPrimaryInverse">@color/red_200</item>
+        <item name="colorSecondary">@color/red_600</item>
+        <item name="colorOnSecondary">@color/white</item>
+        <item name="colorSecondaryContainer">@color/red_100</item>
+        <item name="colorOnSecondaryContainer">@color/red_900</item>
+        <item name="colorTertiary">@color/red_600</item>
+        <item name="colorOnTertiary">@color/white</item>
+        <item name="colorTertiaryContainer">@color/red_100</item>
+        <item name="colorOnTertiaryContainer">@color/red_900</item>
+        <item name="android:statusBarColor">@color/red_800</item>
+
+    </style>
+
+<style name="myStyleTheme" parent="Theme.MaterialComponents.DayNight.NoActionBar">
     <item name="android:fontFamily">@font/alfa_slab_one</item>
     <item name="android:textSize">@dimen/text_size_display</item>
 </style>
     <style name="myButtonStyle" parent="Widget.MaterialComponents.Button">
         <item name="android:fontFamily">@font/alfa_slab_one</item>
         <item name="android:textSize">@dimen/button_text_size</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+    <style name="myRadioButtonStyle" parent="Widget.AppCompat.CompoundButton.RadioButton">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/text_size_theme</item>
     </style>
 
 </resources>
