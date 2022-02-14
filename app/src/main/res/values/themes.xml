@@ -8,7 +8,7 @@
         <item name="materialButtonStyle">@style/myButtonStyle</item>
         <item name="android:theme">@style/myStyleTheme</item>
         <item name="radioButtonStyle">@style/myRadioButtonStyle</item>
-
+        <item name="android:windowBackground">?attr/colorPrimary</item>
     </style>
 
     <style name="myThemeRed" parent="Theme.MaterialComponents.DayNight.NoActionBar">
@@ -18,15 +18,17 @@
         <item name="colorSecondary">@color/red_600</item>
         <item name="colorOnSecondary">@color/white</item>
         <item name="android:statusBarColor">@color/red_800</item>
+        <item name="android:windowBackground">?attr/colorPrimary</item>
 
     </style>
     <style name="myThemeGreen" parent="Theme.MaterialComponents.DayNight.NoActionBar">
-        <item name="android:navigationBarColor">@color/green_500</item>
+        <item name="android:navigationBarColor">@color/green_800</item>
         <item name="colorPrimary">@color/green_600</item>
         <item name="colorOnPrimary">@color/white</item>
         <item name="colorSecondary">@color/green_600</item>
         <item name="colorOnSecondary">@color/white</item>
         <item name="android:statusBarColor">@color/green_800</item>
+        <item name="android:windowBackground">?attr/colorPrimary</item>
 
     </style>
     <style name="myThemeBlue" parent="Theme.MaterialComponents.DayNight.NoActionBar">
@@ -36,6 +38,8 @@
         <item name="colorSecondary">@color/blue_600</item>
         <item name="colorOnSecondary">@color/white</item>
         <item name="android:statusBarColor">@color/blue_800</item>
+
+        <item name="android:windowBackground">?attr/colorPrimary</item>
 
     </style>
 
